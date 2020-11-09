@@ -1,8 +1,43 @@
-@font-face { /* Définition d'une nouvelle police nommée Raleway */
+@font-face 
+{ /* Définition d'une nouvelle police nommée Raleway */
     font-family:'Raleway.ttf';
     src:url('Raleway.ttf');
 }
 
-body {
+body
+{
     font-family:'Raleway.ttf';
+}
+/* Partie HEADER */
+
+
+/* <div class="navig"> */
+
+.Menu
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navig a
+{
+    margin: 2em;
+}
+
+.heberge
+{ /* couleur du lien Hébergements */
+    color: #0065FC;
+    text-decoration: none; /* Suppression du soulignement des liens */
+}
+
+.activ
+{ /* couleur du lien Activités */
+    color:#000000;
+    text-decoration: none; /* Suppression du soulignement des liens */
+}
+
+.inscription 
+{ /* couleur du lien S'inscrire */
+    color: #0065FC;
+    text-decoration: none; /* Suppression du soulignement des liens */
 }
