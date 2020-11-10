@@ -9,35 +9,116 @@ body
     font-family:'Raleway.ttf';
 }
 /* Partie HEADER */
-
-
-/* <div class="navig"> */
-
 .Menu
 {
     display: flex;
     justify-content: space-between;
 }
-
+/* <div class="navig"> */
 .navig a
 {
-    margin: 2em;
+    margin: 2em; /* marge entre les liens */
 }
 
 .heberge
-{ /* couleur du lien Hébergements */
-    color: #0065FC;
+{ 
+    border-top: 1px solid #0065FC; /* Barre au dessus du lien */
+    padding-top: 0.25em; /* Ecart entre la barre et le lien */
+    color: #0065FC; /* couleur du lien Hébergements */
     text-decoration: none; /* Suppression du soulignement des liens */
 }
 
 .activ
-{ /* couleur du lien Activités */
-    color:#000000;
+{ 
+    color:#000000; /* couleur du lien Activités */
     text-decoration: none; /* Suppression du soulignement des liens */
 }
 
 .inscription 
-{ /* couleur du lien S'inscrire */
-    color: #0065FC;
+{ 
+    color: #0065FC; /* couleur du lien S'inscrire */
     text-decoration: none; /* Suppression du soulignement des liens */
+}
+/* </div class="navig"> */
+
+h1
+{
+    margin-top: 2em;
+    font-size: 1.2em; /* Taille du titre */
+    font-weight: bold; /* Mettre en gras */
+}
+
+h2
+{
+    font-size: 1.2em; /* Taille du titre */
+    font-weight: bold; /* Mettre en gras */
+}
+
+h3
+{
+    font-size: 1em; /* Taille du titre */
+    font-weight: bold; /* Mettre en gras */
+}
+
+header p
+{
+    font-size: 0.8em; /* Taille des p du header */
+}
+
+/* <section class="searching"> */
+.searching p
+{
+    line-height: 0.8em; /* Espace entre la ligne */
+}
+
+.boutonrecherche
+{
+    display: flex;
+}
+
+.search
+{
+    padding: 0.59em 0.59em 0.59em 0.59em;
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0em;
+}
+
+.write
+{
+    border-left: none;
+    border-right: none;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.map
+{
+    padding: 0.59em 0.59em 0.59em 0.59em;
+    background-color: #F2F2F2;
+    border: none;
+    float: left;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0em;
+    border-top-right-radius: 0em;
+    border-top-left-radius: 0.5em;
+}
+/* </section class="searching" */
+
+/* <section class="filtre"> */
+.filtre
+{
+    display: flex;
+    align-items: baseline;
+}
+
+.filtre button
+{
+    margin: 1em;
 }
