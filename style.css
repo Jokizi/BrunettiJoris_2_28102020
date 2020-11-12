@@ -3,33 +3,40 @@
     src:url('Raleway.ttf');
 }
 
-body{
+body {
     font-family:'Raleway.ttf';
 }
-/* Partie HEADER */
-.Menu{
+
+.bloc_page {
+    padding: 0% 3% 0 3%; /* marge coté gauche et droit de la page web */
+}
+
+/* <Partie HEADER> */
+
+/* <nav class="Menu"> */
+.Menu {
     display: flex;
     justify-content: space-between;
     padding-top: 2em;
 }
 /* <div class="navig"> */
-.navig a{
+.navig a {
     margin: 2em; /* marge entre les liens */
     text-decoration: none; /* Suppression du soulignement des liens */
 }
 
-.navig a:hover{
+.navig a:hover {
     border-top: 1px solid #0065FC; /* Barre au dessus du lien */
     padding-top: 2.3em; /* Ecart entre la barre et le lien */
 }
 
-.heberge{ 
+.heberge { 
     color: #0065FC; /* couleur du lien Hébergements */
     border-top: 1px solid #0065FC;
     padding-top: 2.3em;
 }
 
-.activ{ 
+.activ { 
     color:#000000; /* couleur du lien Activités */
 }
 
@@ -37,37 +44,28 @@ body{
     color: #0065FC; /* couleur du lien S'inscrire */
 }
 /* </div class="navig"> */
+/* </nav class="Menu"> */
 
-h1{
+/* <section class="searching"> */
+h1 {
     margin-top: 2em;
     font-size: 1.2em; /* Taille du titre */
     font-weight: bold; /* Mettre en gras */
 }
 
-h2{
-    font-size: 1.2em; /* Taille du titre */
-    font-weight: bold; /* Mettre en gras */
-}
-
-h3{
-    font-size: 1em; /* Taille du titre */
-    font-weight: bold; /* Mettre en gras */
-}
-
-header p{
+header p {
     font-size: 0.8em; /* Taille des p du header */
 }
 
-/* <section class="searching"> */
-.searching p{
+.searching p {
     line-height: 0.8em; /* Espace entre la ligne */
 }
-
+/* <div class="boutonrecherche"> */
 .boutonrecherche{
     display: flex;
 }
 
-.search{
+.search {
     padding: 0.59em 0.59em 0.59em 0.59em;
     background-color: #0065FC;
     border: none;
@@ -79,7 +77,7 @@ header p{
     border-top-left-radius: 0em;
 }
 
-.write{
+.write {
     border-left: none;
     border-right: none;
     padding: 0.5em 0.5em 0.5em 0.5em;
@@ -87,7 +85,7 @@ header p{
     border-bottom: 1px solid #F2F2F2;
 }
 
-.map{
+.map {
     padding: 1.2em 1.2em 1.2em 1.2em;
     background-color: #F2F2F2;
     border: none;
@@ -96,28 +94,30 @@ header p{
     border-top-right-radius: 0em;
     border-top-left-radius: 0.5em;
 }
+/* </div class="boutonrecherche"> */
 /* </section class="searching" */
 
 /* <section class="filtres"> */
-.filtre{
+/* <h3 class="titrefi">Filtres</h3> */
+.titrefi {
+    margin-right: 1.875em;
+}
+/* </h3 class="titrefi">Filtres</h3> */
+/* <span class="filtre"> */
+.filtre {
     display: flex;
     align-items: baseline;
 }
 
-.filtre:hover{
+.filtre:hover {
     background-color: #DEEBFF; /* changement d'apparence au survol */
 }
 
-.filtre button{
+.filtre button {
     margin: 1em;
 }
 
-/* Filtre */
-.titrefi{
-    margin-right: 1.875em;
-}
-
-.icone{
+.icone {
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 50%;
@@ -129,7 +129,7 @@ header p{
     justify-content: center;
 }
 
-.filtre{
+.filtre {
     display: flex;
     align-items: center;
     border: 1px solid #d9d9d9;
@@ -138,22 +138,24 @@ header p{
     padding-right: 1em;
 }
 
-.lien{
+.lien {
     text-decoration: none;
     color: black;
     font-weight: bold;
     margin-left: 0.8em;
 }
 
-.filtres{
+.filtres {
     display: flex;
     flex-wrap: wrap;
     margin-top: 1.5em;
     margin-bottom:1.5em;
 }
+/* </span class="filtre"> */
+/* </section class="filtres"> */
 
-/* Infos */
-.loginfo{
+/* <infos> */
+.loginfo {
     color: #0065FC;
     border-radius: 50%;
     border: 1px solid #d9d9d9;
@@ -165,7 +167,125 @@ header p{
     margin-right: 4px;
 }
 
-.logements{
+.logements {
     display: flex;
     align-items: center;
 }
+/* </infos> */
+
+/* </Partie HEADER> */
+
+/* <Titre h2 h3> */
+h2 {
+    font-size: 1.2em; /* Taille du titre */
+    font-weight: bold; /* Mettre en gras */
+}
+
+h3 {
+    font-size: 1em; /* Taille du titre */
+    font-weight: bold; /* Mettre en gras */
+}
+/* </Titre h2 h3> */
+
+/* <Partie Hébergements et Populaires> */
+
+/* <div class="respop"> "Resultats+Populaires" */
+.respop {
+    display: flex;
+    justify-content: space-between;
+}
+/* </div class="respop"> "Resultats+Populaires" */
+
+/* <article class="Resultats"> */
+.Resultats {
+    width: 62%;
+    background-color: #F2F2F2;
+    padding: 0 3% 0 3%;
+    justify-content: space-around;
+    border-radius: 2%;
+}
+
+.box-choix {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* <article class="choix"> */
+.choix {
+    width: 29%;
+    background-color: #fff;
+    height: 12em;
+    margin-bottom: 2em;
+    padding: 0.5%;
+    border-radius: 3%;
+}
+
+.choix img {
+    object-fit: cover;
+    width: 100%;
+    height: 6.75em;
+    border-radius: 3% 3% 0 0;
+}
+
+.choix a {
+    text-decoration: none;
+    color: black;
+}
+
+.choix p {
+    padding-left: 5%;
+    margin: inherit;
+    margin-bottom: 0.5em;
+}
+
+.choix h3 {
+    padding-left: 5%;
+    margin: inherit;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+/* </article class="choix"> */
+/* </article class="Resultats"> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Populaires {
+    /*width: auto;*/
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.pop {
+    width: 20em;
+    background-color: #fff;
+    height: 12em;
+}
+
+.pop img {
+    object-fit: cover;
+    width: 13em;
+    height: 7em;
+}
+
+
