@@ -193,23 +193,42 @@ h3 {
 .respop {
     display: flex;
     justify-content: space-between;
+    height: 39em;
 }
 /* </div class="respop"> "Resultats+Populaires" */
 
 /* <article class="Resultats"> */
 .Resultats {
-    width: 62%;
+    width: 61%;
     background-color: #F2F2F2;
     padding: 0 3% 0 3%;
     justify-content: space-around;
     border-radius: 2%;
 }
 
+.Resultats h2 {
+    padding-top: 2em;
+    padding-left: 1em;
+}
+
+.more h3 {
+    padding-left: 1em;
+
+}
+
+.more {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* <div class="box-choix"> */
 .box-choix {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+/* </div class="box-choix"> */
 
 /* <article class="choix"> */
 .choix {
@@ -217,8 +236,9 @@ h3 {
     background-color: #fff;
     height: 12em;
     margin-bottom: 2em;
-    padding: 0.5%;
+    padding: 0.6%;
     border-radius: 3%;
+    box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
 }
 
 .choix img {
@@ -245,6 +265,14 @@ h3 {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
+
+.choix i {
+    color:  #0065FC;
+}
+
+.choix .vide {
+    color: #e6e6e6;
+}
 /* </article class="choix"> */
 /* </article class="Resultats"> */
 
@@ -255,37 +283,93 @@ h3 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .Populaires {
-    /*width: auto;*/
-    background-color: red;
+    width: 24%;
+    background-color: #F2F2F2;
+    border-radius: 2%;
+    padding: 0 3% 3% 3%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
+.Populaires h2 {
+    padding-top: 2em;
+}
 
+.Populaires h2 i {
+    margin-left: 7.5em;
+}
+
+.box-pop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .pop {
-    width: 20em;
+    width: 100%;
     background-color: #fff;
-    height: 12em;
+    height: 8em;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3%;
+    margin-bottom: 1.8em;
+}
+
+.pop a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
 }
 
 .pop img {
     object-fit: cover;
-    width: 13em;
-    height: 7em;
+    width: 38%;
+    height: 8em;
+    border-radius: 3% 0 0 3%;
 }
 
+.texte {
+    padding-left: 5%;
+}
+
+.texte h3 {
+    margin-bottom: inherit;
+}
+
+.texte p {
+    margin-top: inherit;
+    padding-top: 0.5em;
+    padding-bottom: 0.1em;
+}
+
+.pop i {
+        color:  #0065FC;
+    }
+
+.pop .vide {
+    color: #e6e6e6;
+}
+
+
+
+
+
+/* <Partie FOOTER> */
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-right: 20em;
+    padding-left: 3em;
+    padding-top: 3em;
+}
+
+/* </Partie FOOTER> */
 
