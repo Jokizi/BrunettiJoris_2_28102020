@@ -49,12 +49,12 @@ body {
 /* <section class="searching"> */
 h1 {
     margin-top: 2em;
-    font-size: 1.2em; /* Taille du titre */
+    font-size: 1.5em; /* Taille du titre */
     font-weight: bold; /* Mettre en gras */
 }
 
 header p {
-    font-size: 0.8em; /* Taille des p du header */
+    font-size: 1em; /* Taille des p du header */
 }
 
 .searching p {
@@ -63,6 +63,7 @@ header p {
 /* <div class="boutonrecherche"> */
 .boutonrecherche{
     display: flex;
+
 }
 
 .search {
@@ -75,6 +76,8 @@ header p {
     border-bottom-right-radius: 0.5em;
     border-top-right-radius: 0.5em;
     border-top-left-radius: 0em;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .write {
@@ -83,6 +86,8 @@ header p {
     padding: 0.5em 0.5em 0.5em 0.5em;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .map {
@@ -199,21 +204,24 @@ h3 {
 
 /* <article class="Resultats"> */
 .Resultats {
-    width: 61%;
+    width: 60%;
     background-color: #F2F2F2;
-    padding: 0 3% 0 3%;
+    padding: 0 2% 0 2%;
     justify-content: space-around;
-    border-radius: 2%;
+    border-radius: 4%;
 }
 
 .Resultats h2 {
-    padding-top: 2em;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
     padding-left: 1em;
+    margin-bottom: inherit;
 }
 
 .more h3 {
     padding-left: 1em;
-
+    margin: inherit;
+    padding-top: 0.5em;
 }
 
 .more {
@@ -236,8 +244,8 @@ h3 {
     background-color: #fff;
     height: 12em;
     margin-bottom: 2em;
-    padding: 0.6%;
-    border-radius: 3%;
+    padding: 0.8%;
+    border-radius: 8%;
     box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
 }
 
@@ -245,7 +253,7 @@ h3 {
     object-fit: cover;
     width: 100%;
     height: 6.75em;
-    border-radius: 3% 3% 0 0;
+    border-radius: 8% 8% 0 0;
 }
 
 .choix a {
@@ -257,6 +265,8 @@ h3 {
     padding-left: 5%;
     margin: inherit;
     margin-bottom: 0.5em;
+    line-height: 1.2em;
+    font-size: 0.9em;
 }
 
 .choix h3 {
@@ -268,10 +278,12 @@ h3 {
 
 .choix i {
     color:  #0065FC;
+    font-size: 0.9em;
 }
 
 .choix .vide {
     color: #e6e6e6;
+    font-size: 0.9em;
 }
 /* </article class="choix"> */
 /* </article class="Resultats"> */
@@ -284,37 +296,41 @@ h3 {
 
 
 .Populaires {
-    width: 24%;
+    width: 27%;
     background-color: #F2F2F2;
-    border-radius: 2%;
-    padding: 0 3% 3% 3%;
+    border-radius: 5%;
+    padding: 0% 3% 3% 3%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .Populaires h2 {
-    padding-top: 2em;
+    padding-top: 2.5em;
+    padding-bottom: 1.3em;
+    margin-bottom: inherit;
 }
 
 .Populaires h2 i {
-    margin-left: 7.5em;
+    margin-left: 9em;
 }
 
 .box-pop {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .pop {
-    width: 100%;
+    width: 95%;
     background-color: #fff;
     height: 8em;
-    padding: 1%;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 3%;
+    border-radius: 8%;
+    box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
     margin-bottom: 1.8em;
 }
 
@@ -330,7 +346,7 @@ h3 {
     object-fit: cover;
     width: 38%;
     height: 8em;
-    border-radius: 3% 0 0 3%;
+    border-radius: 8% 0 0 8%;
 }
 
 .texte {
@@ -345,14 +361,17 @@ h3 {
     margin-top: inherit;
     padding-top: 0.5em;
     padding-bottom: 0.1em;
+    font-size: 0.9em;
 }
 
 .pop i {
         color:  #0065FC;
+        font-size: 0.9em;
     }
 
 .pop .vide {
     color: #e6e6e6;
+    font-size: 0.9em;
 }
 
 
