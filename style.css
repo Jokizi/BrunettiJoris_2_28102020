@@ -19,7 +19,7 @@ body {
     justify-content: space-between;
     padding-top: 2em;
 }
-/* <div class="navig"> */
+    /* <div class="navig"> */
 .navig a {
     margin: 2em; /* marge entre les liens */
     text-decoration: none; /* Suppression du soulignement des liens */
@@ -43,75 +43,88 @@ body {
 .inscription { 
     color: #0065FC; /* couleur du lien S'inscrire */
 }
-/* </div class="navig"> */
+    /* </div class="navig"> */
 /* </nav class="Menu"> */
 
-/* <section class="searching"> */
+/* <section class="Recherche"> */
 h1 {
     margin-top: 2em;
     font-size: 1.5em; /* Taille du titre */
     font-weight: bold; /* Mettre en gras */
+    margin-bottom: inherit;
 }
 
 header p {
     font-size: 1em; /* Taille des p du header */
 }
 
-.searching p {
-    line-height: 0.8em; /* Espace entre la ligne */
+.Recherche p {
+    padding-top: 0.3em;
+    margin-top: inherit;
 }
-/* <div class="boutonrecherche"> */
-.boutonrecherche{
+
+    /* <div class="Recherche-bouton"> */
+.Recherche-bouton {
     display: flex;
 
 }
 
-.search {
-    padding: 0.59em 0.59em 0.59em 0.59em;
+.Bouton-search {
+    padding: 1em 1em 1em 1em;
     background-color: #0065FC;
     border: none;
     color: white;
     text-align: center;
     border-bottom-left-radius: 0em;
-    border-bottom-right-radius: 0.5em;
-    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
     border-top-left-radius: 0em;
     font-weight: bold;
     font-size: 1em;
 }
 
-.write {
+.Bouton-write {
     border-left: none;
     border-right: none;
-    padding: 0.5em 0.5em 0.5em 0.5em;
+    padding: 1em 1em 1em 1em;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     font-weight: bold;
     font-size: 1em;
 }
 
-.map {
-    padding: 1.2em 1.2em 1.2em 1.2em;
+.Bouton-map {
+    padding: 1.2em 1.5em 1.2em 1.5em;
     background-color: #F2F2F2;
     border: none;
-    border-bottom-left-radius: 0.5em;
+    border-bottom-left-radius: 1em;
     border-bottom-right-radius: 0em;
     border-top-right-radius: 0em;
-    border-top-left-radius: 0.5em;
+    border-top-left-radius: 1em;
 }
-/* </div class="boutonrecherche"> */
+    /* </div class="boutonrecherche"> */
 /* </section class="searching" */
 
-/* <section class="filtres"> */
-/* <h3 class="titrefi">Filtres</h3> */
-.titrefi {
+/* <section class="Filtres"> */
+.Filtres {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+    margin-bottom:2.5em;
+}
+    /* <h3 class="Filtres-titre">Filtres</h3> */
+.Filtres-titre {
     margin-right: 1.875em;
 }
-/* </h3 class="titrefi">Filtres</h3> */
-/* <span class="filtre"> */
+    /* </h3 class="titrefi">Filtres</h3> */
+        /* <span class="filtre"> */
 .filtre {
-    display: flex;
-    align-items: baseline;
+    display: flex;/* </Partie FOOTER> */
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 1.875em;
+    margin-right: 1.875em;
+    padding-right: 1em;
 }
 
 .filtre:hover {
@@ -122,7 +135,7 @@ header p {
     margin: 1em;
 }
 
-.icone {
+.filtre-icone {
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 50%;
@@ -134,33 +147,18 @@ header p {
     justify-content: center;
 }
 
-.filtre {
-    display: flex;
-    align-items: center;
-    border: 1px solid #d9d9d9;
-    border-radius: 1.875em;
-    margin-right: 1.875em;
-    padding-right: 1em;
-}
-
-.lien {
+.filtre-lien {
     text-decoration: none;
     color: black;
     font-weight: bold;
     margin-left: 0.8em;
 }
 
-.filtres {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 1.5em;
-    margin-bottom:1.5em;
-}
-/* </span class="filtre"> */
-/* </section class="filtres"> */
+        /* </span class="filtre"> */
+    /* </section class="Filtres"> */
 
 /* <infos> */
-.loginfo {
+.logo-info {
     color: #0065FC;
     border-radius: 50%;
     border: 1px solid #d9d9d9;
@@ -169,7 +167,7 @@ header p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 4px;
+    margin-right: 0.7em;
 }
 
 .logements {
@@ -192,15 +190,16 @@ h3 {
 }
 /* </Titre h2 h3> */
 
-/* <Partie Hébergements et Populaires> */
+/* <Partie HEBERGEMENTS ET POPULAIRES> */
 
-/* <div class="respop"> "Resultats+Populaires" */
-.respop {
+/* <div class="Resultats-Populaires"> */
+.Resultats-Populaires {
     display: flex;
     justify-content: space-between;
     height: 39em;
+    padding-top: 2.5em;
 }
-/* </div class="respop"> "Resultats+Populaires" */
+/* </div class="Resultats-Populaires"> 
 
 /* <article class="Resultats"> */
 .Resultats {
@@ -208,7 +207,7 @@ h3 {
     background-color: #F2F2F2;
     padding: 0 2% 0 2%;
     justify-content: space-around;
-    border-radius: 4%;
+    border-radius: 1em;
 }
 
 .Resultats h2 {
@@ -218,50 +217,48 @@ h3 {
     margin-bottom: inherit;
 }
 
-.more h3 {
+.Afficher h3 {
     padding-left: 1em;
     margin: inherit;
     padding-top: 0.5em;
 }
 
-.more {
+.Afficher {
     text-decoration: none;
     color: black;
 }
 
-
-/* <div class="box-choix"> */
-.box-choix {
+    /* <div class="Resultats-box-choix"> */
+.Resultats-box-choix {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-/* </div class="box-choix"> */
 
-/* <article class="choix"> */
-.choix {
+        /* <article class="Resultats-choix"> */
+.Resultats-choix {
     width: 29%;
     background-color: #fff;
     height: 12em;
     margin-bottom: 2em;
     padding: 0.8%;
-    border-radius: 8%;
+    border-radius: 1em;
     box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
 }
 
-.choix img {
+.Resultats-choix img {
     object-fit: cover;
     width: 100%;
     height: 6.75em;
-    border-radius: 8% 8% 0 0;
+    border-radius: 0.8em 0.8em 0 0;
 }
 
-.choix a {
+.Resultats-choix a {
     text-decoration: none;
     color: black;
 }
 
-.choix p {
+.Resultats-choix p {
     padding-left: 5%;
     margin: inherit;
     margin-bottom: 0.5em;
@@ -269,36 +266,34 @@ h3 {
     font-size: 0.9em;
 }
 
-.choix h3 {
+.Resultats-choix h3 {
     padding-left: 5%;
     margin: inherit;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
-.choix i {
+.Resultats-choix i {
     color:  #0065FC;
     font-size: 0.9em;
 }
 
-.choix .vide {
+.Resultats-choix .etoile-vide {
     color: #e6e6e6;
     font-size: 0.9em;
 }
-/* </article class="choix"> */
+        /* </article class="Resultats-choix"> */
+    /* </div class="Resultats-box-choix"> */
 /* </article class="Resultats"> */
 
 
+/* Partie <POPULAIRES> */
 
-
-
-
-
-
+/* <article class="Populaires"> */
 .Populaires {
     width: 27%;
     background-color: #F2F2F2;
-    border-radius: 5%;
+    border-radius: 1em;
     padding: 0% 3% 3% 3%;
     display: flex;
     flex-direction: column;
@@ -315,13 +310,15 @@ h3 {
     margin-left: 9em;
 }
 
-.box-pop {
+    /* <div class="Populaires-box-pop"> */
+.Populaires-box-pop {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.pop {
+        /* <article class="Populaires-pop"> */
+.Populaires-pop {
     width: 95%;
     background-color: #fff;
     height: 8em;
@@ -329,57 +326,138 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 8%;
+    border-radius: 1em;
     box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
     margin-bottom: 1.8em;
 }
 
-.pop a {
+.Populaires-pop a {
     text-decoration: none;
     color: black;
     display: flex;
     flex-direction: row;
-    justify-items: space-between;
 }
 
-.pop img {
+.Populaires-pop img {
     object-fit: cover;
     width: 38%;
     height: 8em;
-    border-radius: 8% 0 0 8%;
+    border-radius: 0.8em 0 0 0.8em;
 }
 
-.texte {
+.pop-description {
     padding-left: 5%;
 }
 
-.texte h3 {
+.pop-description h3 {
     margin-bottom: inherit;
 }
 
-.texte p {
+.pop-description p {
     margin-top: inherit;
     padding-top: 0.5em;
     padding-bottom: 0.1em;
     font-size: 0.9em;
 }
 
-.pop i {
+.Populaires-pop i {
         color:  #0065FC;
         font-size: 0.9em;
     }
 
-.pop .vide {
+.Populaires-pop .etoile-vide {
     color: #e6e6e6;
     font-size: 0.9em;
 }
+        /* </article class="Populaires-pop"> */
+    /* </div class="Populaires-box-pop"> */
+/* </article class="Populaires"> */
 
 
+/* <Partie ACTIVITES> */
 
+/* <article class="Activites"> */
+.Activites h2 {
+    padding-top: 2.5em;
+}
+
+    /* <div class="Activites-box-Acts"> */
+.Activites-box-Acts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colones d' 1fr */
+    grid-template-rows: repeat(6, 5em); /* 6 lignes de 5em */
+    grid-gap: 30px; /* écart entres les activités */
+}
+
+        /* <article class="Activites-Act> */
+.Activites-Act {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
+    
+}
+
+.Activites-Act h3 {
+    margin: 1.5em 1.5em;
+}
+
+.Activites-Act a {
+    text-decoration: none;
+    color: black;
+}
+
+            /* <a class="Act-lien"> */
+.Act-lien {
+    position: relative; /* position qui peut bouger (contenant) */
+    flex: 1;
+}
+            /* </a class="Act-lien"> */
+                /* <img class="Act-img"> */
+.Act-img {
+    object-fit: cover;
+    position: absolute; /* positionnement fixe (contenu) */
+    height: 100%;
+    width: 100%;
+}
+                /* </img class="Act-img"> */
+
+.Act-1 {
+    grid-column: 1; /* toute la colonne 1 */
+    grid-row: 1/6; /* de la ligne 1 à 6 */
+}
+
+.Act-2 {
+    grid-column: 2;
+    grid-row: 1/4;
+}
+
+.Act-3 {
+    grid-column: 2;
+    grid-row: 4/6;
+}
+
+.Act-4 {
+    grid-column: 3;
+    grid-row: 1/6;
+}
+
+.Act-5 {
+    grid-column: 4;
+    grid-row: 1/3;
+}
+
+.Act-6 {
+    grid-column: 4;
+    grid-row: 3/6;
+}
+        /* </article class="Activites-Act> */
+    /* </div class="Activites-box-Acts"> */
+/* <article class="Activites"> */
 
 
 /* <Partie FOOTER> */
-
 footer {
     background-color: #F2F2F2;
     display: flex;
@@ -390,5 +468,4 @@ footer {
     padding-top: 3em;
 }
 
-/* </Partie FOOTER> */
 
