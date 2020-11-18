@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/ico" href="img/images/Reservia@.ico"/>
     <script src="https://kit.fontawesome.com/6e676cf9ec.js" crossorigin="anonymous"></script>
     <title>Réservia</title>
@@ -13,11 +13,11 @@
         <header>
             <nav class="Menu">
                 <img src="img/images/Reservia.svg" class="logo" alt="Logo Reservia">
-                <div class="navig">
-                    <a href="#Hebergements" class="heberge">Hébergements</a>
-                    <a href="#Activites" class="activ">Activités</a>
+                    <span>
+                        <a href="#Hebergements" class="heberge">Hébergements</a>
+                        <a href="#Activites" class="activ">Activités</a>
+                    </span>
                     <a href="#" class="inscription">S'inscrire</a>
-                </div>
             </nav>
             <section class="Recherche">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -27,35 +27,40 @@
                         <i class="fas fa-map-marker-alt"></i>
                     </button>
                     <input class="Bouton-write" type="search" name="search" placeholder="Marseille, France">
-                    <input class="Bouton-search" type="button" value="Rechercher">
+                    <button class="Bouton-search">
+                        <i class="fas fa-search loupe"></i>
+                        <span class="Bouton-search-text">Rechercher</span>
+                    </button>
                 </div>
             </section>
             <section class="Filtres">
                 <h3 class="Filtres-titre">Filtres</h3>
-                <span class="filtre">
-                    <span class="filtre-icone">
-                        <i class="fas fa-money-bill-wave"></i>
+                <div class="box-filtre">
+                    <span class="filtre">
+                        <span class="filtre-icone">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </span>
+                        <a href="#" class="filtre-lien">Économique</a>
                     </span>
-                    <a href="#" class="filtre-lien">Économique</a>
-                </span>
-                <span class="filtre">
-                    <span class="filtre-icone">
-                        <i class="fas fa-child"></i>
+                    <span class="filtre">
+                        <span class="filtre-icone">
+                            <i class="fas fa-child"></i>
+                        </span>
+                        <a href="#" class="filtre-lien">Familial</a>
                     </span>
-                    <a href="#" class="filtre-lien">Familial</a>
-                </span>
-                <span class="filtre">
-                    <span class="filtre-icone">
-                        <i class="fas fa-heart"></i>
+                    <span class="filtre">
+                        <span class="filtre-icone">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                        <a href="#" class="filtre-lien">Romantique</a>
                     </span>
-                    <a href="#" class="filtre-lien">Romantique</a>
-                </span>
-                <span class="filtre">
-                    <span class="filtre-icone">
-                        <i class="fas fa-dog"></i>
+                    <span class="filtre">
+                        <span class="filtre-icone">
+                            <i class="fas fa-dog"></i>
+                        </span>
+                        <a href="#" class="filtre-lien">Animaux autorisés</a>
                     </span>
-                    <a href="#" class="filtre-lien">Animaux autorisés</a>
-                </span>
+                </div>
             </section>
             <p class="logements"><span class="logo-info"><i class="fas fa-info info"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>
         </header>
@@ -165,7 +170,7 @@
                 </a>
             </article>
             <article class="Populaires">
-                <h2>Les plus populaires <span><i class="fas fa-chart-line"></i></span></h2>
+                <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
                 <div class="Populaires-box-pop">
                     <article class="Populaires-pop">
                         <a href="#">
