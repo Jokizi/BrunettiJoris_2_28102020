@@ -475,11 +475,108 @@ footer {
 
 /* RESPONSIVE */
 
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  body {
+    font-size: 12px;
+    background-color: blue;
+  }
+
+  /* HEADER */
+
+  .Menu a:hover {
+    border-top: inherit; /* annulation du survol des liens */
+  }
+
+  .Filtres-titre {
+    padding-top: 1em;
+  }
+  .filtre {
+    border-radius: 5em;
+  }
+  /* RESULTATS + POPULAIRES */
+
+  .Resultats-Populaires {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .Populaires-box-pop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .Populaires {
+    order: 1;
+    width: 100%;
+    border-radius: inherit;
+    /*font-size: 0.7em;*/
+  }
+
+  .Populaires-pop {
+    width: 29%;
+    background-color: #fff;
+    height: 12em;
+    margin-bottom: 2em;
+    padding: 0.8%;
+    border-radius: 1em;
+    box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
+  }
+
+  .Populaires-pop a {
+    flex-direction: column;
+  }
+
+  .Populaires-pop img {
+    object-fit: cover;
+    width: 100%;
+    height: 6.75em;
+    border-radius: 0.8em 0.8em 0 0;
+  }
+
+  .pop-description {
+    padding-left: 5%;
+    margin: inherit;
+    margin-bottom: 0.5em;
+    line-height: 1.2em;
+    font-size: 0.9em;
+  }
+  /*.Populaires h2 {
+          font-size: 1.8em;
+      }
+      
+      .Populaires-pop {
+          width: 100%;
+          height: 11em;
+      }
+      
+      .Populaires-pop img {
+          height: 10em;
+          width: 30%;
+          height: 12em;
+      }
+      
+      .pop-description {
+          font-size: 1.5em;
+      }*/
+
+  .Resultats {
+    order: 2;
+    width: 100%;
+    background-color: inherit;
+  }
+
+  .Activites-box-Acts {
+    grid-template-rows: repeat(6, 4em);
+  }
+}
+
 @media screen and (max-width: 414px) {
   * {
     box-sizing: border-box;
   }
   body {
+    background-color: green;
     font-size: 14px;
     margin: 0;
   }
@@ -671,40 +768,5 @@ footer {
     padding-right: inherit;
     padding-left: 2em;
     margin-top: 3em;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    /*font-size: 10px;*/
-  }
-
-  /* HEADER */
-  .Filtres-titre {
-    padding-top: 1em;
-  }
-  .filtre {
-    border-radius: 5em;
-  }
-  /* RESULTATS + POPULAIRES */
-  .Populaires h2 i {
-    margin-left: 5em;
-  }
-}
-@media screen and (max-width: 1024px) {
-  body {
-    /*font-size: 10px;*/
-  }
-
-  /* HEADER */
-  .Filtres-titre {
-    padding-top: 1em;
-  }
-  .filtre {
-    border-radius: 5em;
-  }
-  /* RESULTATS + POPULAIRES */
-  .Populaires h2 i {
-    margin-left: 10em;
   }
 }
