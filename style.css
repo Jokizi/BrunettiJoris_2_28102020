@@ -1,192 +1,189 @@
-@font-face { 
-    font-family:'Raleway.ttf'; /* Définition d'une nouvelle police nommée Raleway */
-    src:url('Raleway.ttf');
+@font-face {
+  font-family: "Raleway.ttf"; /* Définition d'une nouvelle police nommée Raleway */
+  src: url("Raleway.ttf");
 }
 
 body {
-    font-family:'Raleway.ttf';
+  font-family: "Raleway.ttf";
 }
 
 .bloc_page {
-    padding: 0% 3% 0 3%; /* marge coté gauche et droit de la page web */
+  padding: 0% 3% 0 3%; /* marge coté gauche et droit de la page web */
 }
 
 /* <Partie HEADER> */
 
 /* <nav class="Menu"> */
 .Menu {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .Menu a {
-    text-decoration: none; /* Enlève le soulignement du lien */
-    display: flex;
-    margin-left: 2em;
+  text-decoration: none; /* Enlève le soulignement du lien */
+  display: flex;
+  margin-left: 2em;
 }
 
 .Menu span {
-    display:flex;
-    justify-items: flex-start;
+  display: flex;
+  justify-items: flex-start;
 }
 
 .Menu a:hover {
-    border-top: 1px solid #0065FC; /* Barre au dessus du lien */
+  border-top: 1px solid #0065fc; /* Barre au dessus du lien */
 }
 
 .logo {
-    margin-right: auto;
-    padding-top: 2em;
+  margin-right: auto;
+  padding-top: 2em;
 }
 
-.heberge { 
-    color: #0065FC; /* couleur du lien "Hébergements" */
-    border-top: 1px solid #0065FC;
-    padding-top: 2em; /* Ecart entre la barre et le lien */
-
+.heberge {
+  color: #0065fc; /* couleur du lien "Hébergements" */
+  border-top: 1px solid #0065fc;
+  padding-top: 2em; /* Ecart entre la barre et le lien */
 }
 
-.activ { 
-    color:#000000; /* couleur du lien "Activités" */
-    padding-top: 2em;
+.activ {
+  color: #000000; /* couleur du lien "Activités" */
+  padding-top: 2em;
 }
 
-.inscription { 
-    color: #0065FC; /* couleur du lien "S'inscrire" */
-    padding-top: 2em;
-    
+.inscription {
+  color: #0065fc; /* couleur du lien "S'inscrire" */
+  padding-top: 2em;
 }
 /* </nav class="Menu"> */
 
 /* <section class="Recherche"> */
 h1 {
-    margin-top: 2em;
-    font-size: 1.5em; /* Taille du titre */
-    font-weight: bold; /* Mettre en gras */
-    margin-bottom: inherit;
+  margin-top: 2em;
+  font-size: 1.5em; /* Taille du titre */
+  font-weight: bold; /* Mettre en gras */
+  margin-bottom: inherit;
 }
 
 header p {
-    font-size: 1em; /* Taille des p du header */
+  font-size: 1em; /* Taille des p du header */
 }
 
 .Recherche p {
-    padding-top: 0.3em;
-    margin-top: inherit;
+  padding-top: 0.3em;
+  margin-top: inherit;
 }
 
-    /* <div class="Recherche-bouton"> */
+/* <div class="Recherche-bouton"> */
 .Recherche-bouton {
-    display: flex;
-
+  display: flex;
 }
 
 .Bouton-search {
-    padding: 1em 1em 1em 1em;
-    background-color: #0065FC;
-    border: none;
-    color: white;
-    text-align: center;
-    border-bottom-left-radius: 0em;
-    border-bottom-right-radius: 1em;
-    border-top-right-radius: 1em;
-    border-top-left-radius: 0em;
-    font-weight: bold;
-    font-size: 1em;
+  padding: 1em 1em 1em 1em;
+  background-color: #0065fc;
+  border: none;
+  color: white;
+  text-align: center;
+  border-bottom-left-radius: 0em;
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 0em;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .Bouton-write {
-    border-left: none;
-    border-right: none;
-    padding: 1em 1em 1em 1em;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
-    font-weight: bold;
-    font-size: 1em;
+  border-left: none;
+  border-right: none;
+  padding: 1em 1em 1em 1em;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .Bouton-map {
-    padding: 1.2em 1.5em 1.2em 1.5em;
-    background-color: #F2F2F2;
-    border: none;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 0em;
-    border-top-right-radius: 0em;
-    border-top-left-radius: 1em;
+  padding: 1.2em 1.5em 1.2em 1.5em;
+  background-color: #f2f2f2;
+  border: none;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 0em;
+  border-top-right-radius: 0em;
+  border-top-left-radius: 1em;
 }
-    /* </div class="boutonrecherche"> */
+/* </div class="boutonrecherche"> */
 /* </section class="searching" */
 
 /* <section class="Filtres"> */
 .Filtres {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 1.5em;
-    margin-bottom:2.5em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
 }
-    /* <h3 class="Filtres-titre">Filtres</h3> */
+/* <h3 class="Filtres-titre">Filtres</h3> */
 .Filtres-titre {
-    margin-right: 1.875em;
+  margin-right: 1.875em;
 }
-    /* </h3 class="titrefi">Filtres</h3> */
+/* </h3 class="titrefi">Filtres</h3> */
 
-    /* <div class="box-filtre"> */
+/* <div class="box-filtre"> */
 .box-filtre {
-    display: flex;
+  display: flex;
 }
-        /* <span class="filtre"> */
+/* <span class="filtre"> */
 .filtre {
-    display: flex;
-    align-items: center;
-    border: 1px solid #d9d9d9;
-    border-radius: 1.875em;
-    margin-right: 1.875em;
-    padding-right: 1em;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 1.875em;
+  margin-right: 1.875em;
+  padding-right: 1em;
 }
 
 .filtre:hover {
-    background-color: #DEEBFF; /* changement d'apparence au survol */
+  background-color: #deebff; /* changement d'apparence au survol */
 }
 
 .filtre-icone {
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    font-size: 1.25em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 1.25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filtre-lien {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin-left: 0.8em;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-left: 0.8em;
 }
 
-        /* </span class="filtre"> */
-        /* <div class="box-filtre"> */
-    /* </section class="Filtres"> */
+/* </span class="filtre"> */
+/* <div class="box-filtre"> */
+/* </section class="Filtres"> */
 
 /* <infos> */
 .logo-info {
-    color: #0065FC;
-    border-radius: 50%;
-    border: 1px solid #d9d9d9;
-    height: 1.5em;
-    width: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 0.7em;
+  color: #0065fc;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  height: 1.5em;
+  width: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.7em;
 }
 
 .logements {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 /* </infos> */
 
@@ -194,13 +191,13 @@ header p {
 
 /* <Titre h2 h3> */
 h2 {
-    font-size: 1.2em; /* Taille du titre */
-    font-weight: bold; /* Mettre en gras */
+  font-size: 1.2em; /* Taille du titre */
+  font-weight: bold; /* Mettre en gras */
 }
 
 h3 {
-    font-size: 1em; /* Taille du titre */
-    font-weight: bold; /* Mettre en gras */
+  font-size: 1em; /* Taille du titre */
+  font-weight: bold; /* Mettre en gras */
 }
 /* </Titre h2 h3> */
 
@@ -208,504 +205,506 @@ h3 {
 
 /* <div class="Resultats-Populaires"> */
 .Resultats-Populaires {
-    display: flex;
-    justify-content: space-between;
-    height: 39em;
-    padding-top: 2.5em;
+  display: flex;
+  justify-content: space-between;
+  height: 39em;
+  padding-top: 2.5em;
 }
 /* </div class="Resultats-Populaires"> 
 
 /* <article class="Resultats"> */
 .Resultats {
-    width: 60%;
-    background-color: #F2F2F2;
-    padding: 0 2% 0 2%;
-    justify-content: space-around;
-    border-radius: 1em;
+  width: 60%;
+  background-color: #f2f2f2;
+  padding: 0 2% 0 2%;
+  justify-content: space-around;
+  border-radius: 1em;
 }
 
 .Resultats h2 {
-    padding-top: 1.3em;
-    padding-bottom: 1.3em;
-    padding-left: 1em;
-    margin-bottom: inherit;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
+  padding-left: 1em;
+  margin-bottom: inherit;
 }
 
 .Afficher h3 {
-    padding-left: 1em;
-    margin: inherit;
-    padding-top: 0.5em;
+  padding-left: 1em;
+  margin: inherit;
+  padding-top: 0.5em;
 }
 
 .Afficher {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-    /* <div class="Resultats-box-choix"> */
+/* <div class="Resultats-box-choix"> */
 .Resultats-box-choix {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-        /* <article class="Resultats-choix"> */
+/* <article class="Resultats-choix"> */
 .Resultats-choix {
-    width: 29%;
-    background-color: #fff;
-    height: 12em;
-    margin-bottom: 2em;
-    padding: 0.8%;
-    border-radius: 1em;
-    box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
+  width: 29%;
+  background-color: #fff;
+  height: 12em;
+  margin-bottom: 2em;
+  padding: 0.8%;
+  border-radius: 1em;
+  box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
 }
 
 .Resultats-choix img {
-    object-fit: cover;
-    width: 100%;
-    height: 6.75em;
-    border-radius: 0.8em 0.8em 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 6.75em;
+  border-radius: 0.8em 0.8em 0 0;
 }
 
 .Resultats-choix a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .Resultats-choix p {
-    padding-left: 5%;
-    margin: inherit;
-    margin-bottom: 0.5em;
-    line-height: 1.2em;
-    font-size: 0.9em;
+  padding-left: 5%;
+  margin: inherit;
+  margin-bottom: 0.5em;
+  line-height: 1.2em;
+  font-size: 0.9em;
 }
 
 .Resultats-choix h3 {
-    padding-left: 5%;
-    margin: inherit;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+  padding-left: 5%;
+  margin: inherit;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .Resultats-choix i {
-    color:  #0065FC;
-    font-size: 0.9em;
+  color: #0065fc;
+  font-size: 0.9em;
 }
 
 .Resultats-choix .etoile-vide {
-    color: #e6e6e6;
-    font-size: 0.9em;
+  color: #e6e6e6;
+  font-size: 0.9em;
 }
-        /* </article class="Resultats-choix"> */
-    /* </div class="Resultats-box-choix"> */
+/* </article class="Resultats-choix"> */
+/* </div class="Resultats-box-choix"> */
 /* </article class="Resultats"> */
-
 
 /* Partie <POPULAIRES> */
 
 /* <article class="Populaires"> */
 .Populaires {
-    width: 27%;
-    background-color: #F2F2F2;
-    border-radius: 1em;
-    padding: 0% 3% 3% 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 27%;
+  background-color: #f2f2f2;
+  border-radius: 1em;
+  padding: 0% 3% 3% 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Populaires h2 {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2.5em;
-    padding-bottom: 1.3em;
-    margin-bottom: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5em;
+  padding-bottom: 1.3em;
+  margin-bottom: inherit;
 }
 
-    /* <div class="Populaires-box-pop"> */
+/* <div class="Populaires-box-pop"> */
 .Populaires-box-pop {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-        /* <article class="Populaires-pop"> */
+/* <article class="Populaires-pop"> */
 .Populaires-pop {
-    width: 95%;
-    background-color: #fff;
-    height: 8em;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 1em;
-    box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
-    margin-bottom: 1.8em;
+  width: 95%;
+  background-color: #fff;
+  height: 8em;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1em;
+  box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
+  margin-bottom: 1.8em;
 }
 
 .Populaires-pop a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    flex-direction: row;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: row;
 }
 
 .Populaires-pop img {
-    object-fit: cover;
-    width: 38%;
-    height: 8em;
-    border-radius: 0.8em 0 0 0.8em;
+  object-fit: cover;
+  width: 38%;
+  height: 8em;
+  border-radius: 0.8em 0 0 0.8em;
 }
 
 .pop-description {
-    padding-left: 5%;
+  padding-left: 5%;
 }
 
 .pop-description h3 {
-    margin-bottom: inherit;
+  margin-bottom: inherit;
 }
 
 .pop-description p {
-    margin-top: inherit;
-    padding-top: 0.5em;
-    padding-bottom: 0.1em;
-    font-size: 0.9em;
+  margin-top: inherit;
+  padding-top: 0.5em;
+  padding-bottom: 0.1em;
+  font-size: 0.9em;
 }
 
 .Populaires-pop i {
-        color:  #0065FC;
-        font-size: 0.9em;
-    }
+  color: #0065fc;
+  font-size: 0.9em;
+}
 
 .Populaires-pop .etoile-vide {
-    color: #e6e6e6;
-    font-size: 0.9em;
+  color: #e6e6e6;
+  font-size: 0.9em;
 }
-        /* </article class="Populaires-pop"> */
-    /* </div class="Populaires-box-pop"> */
+/* </article class="Populaires-pop"> */
+/* </div class="Populaires-box-pop"> */
 /* </article class="Populaires"> */
-
 
 /* <Partie ACTIVITES> */
 
 /* <article class="Activites"> */
 .Activites h2 {
-    padding-top: 2.5em;
+  padding-top: 2.5em;
 }
 
-    /* <div class="Activites-box-Acts"> */
+/* <div class="Activites-box-Acts"> */
 .Activites-box-Acts {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colones d' 1fr */
-    grid-template-rows: repeat(6, 5em); /* 6 lignes de 5em */
-    grid-gap: 30px; /* écart entres les activités */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colones d' 1fr */
+  grid-template-rows: repeat(6, 5em); /* 6 lignes de 5em */
+  grid-gap: 30px; /* écart entres les activités */
 }
 
-        /* <article class="Activites-Act> */
+/* <article class="Activites-Act> */
 .Activites-Act {
-    display: flex;
-    flex-direction: column;
-    border-radius: 1em;
-    overflow: hidden;
-    box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
-    
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0.2em 0.2em 0.2em 0.2em #e6e6e6;
 }
 
 .Activites-Act h3 {
-    margin: 1.5em 1.5em;
+  margin: 1.5em 1.5em;
 }
 
 .Activites-Act a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-            /* <a class="Act-lien"> */
+/* <a class="Act-lien"> */
 .Act-lien {
-    position: relative; /* position qui peut bouger (contenant) */
-    flex: 1;
+  position: relative; /* position qui peut bouger (contenant) */
+  flex: 1;
 }
-            /* </a class="Act-lien"> */
-                /* <img class="Act-img"> */
+/* </a class="Act-lien"> */
+/* <img class="Act-img"> */
 .Act-img {
-    object-fit: cover;
-    position: absolute; /* positionnement fixe (contenu) */
-    height: 100%;
-    width: 100%;
+  object-fit: cover;
+  position: absolute; /* positionnement fixe (contenu) */
+  height: 100%;
+  width: 100%;
 }
-                /* </img class="Act-img"> */
+/* </img class="Act-img"> */
 
 .Act-1 {
-    grid-column: 1; /* toute la colonne 1 */
-    grid-row: 1/6; /* de la ligne 1 à 6 */
+  grid-column: 1; /* toute la colonne 1 */
+  grid-row: 1/6; /* de la ligne 1 à 6 */
 }
 
 .Act-2 {
-    grid-column: 2;
-    grid-row: 1/4;
+  grid-column: 2;
+  grid-row: 1/4;
 }
 
 .Act-3 {
-    grid-column: 2;
-    grid-row: 4/6;
+  grid-column: 2;
+  grid-row: 4/6;
 }
 
 .Act-4 {
-    grid-column: 3;
-    grid-row: 1/6;
+  grid-column: 3;
+  grid-row: 1/6;
 }
 
 .Act-5 {
-    grid-column: 4;
-    grid-row: 1/3;
+  grid-column: 4;
+  grid-row: 1/3;
 }
 
 .Act-6 {
-    grid-column: 4;
-    grid-row: 3/6;
+  grid-column: 4;
+  grid-row: 3/6;
 }
-        /* </article class="Activites-Act> */
-    /* </div class="Activites-box-Acts"> */
+/* </article class="Activites-Act> */
+/* </div class="Activites-box-Acts"> */
 /* <article class="Activites"> */
-
 
 /* <Partie FOOTER> */
 footer {
-    background-color: #F2F2F2;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    padding-right: 20em;
-    padding-left: 3em;
-    padding-top: 3em;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-right: 20em;
+  padding-left: 3em;
+  padding-top: 3em;
 }
 
 /* RESPONSIVE */
 
+@media screen and (max-width: 414px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+    margin: 0;
+  }
+  .bloc_page {
+    padding: 0;
+    margin: 0;
+  }
+  .Menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
-@media screen and (max-width: 414px){
-    * {
-        box-sizing: border-box;
-    }
-    body {
-        font-size: 14px;
-        margin: 0;
-    }
-    .bloc_page {
-        padding: 0;
-        margin: 0;
-    }
-    .Menu {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
+  .Menu a {
+    margin-left: inherit;
+  }
 
-    .Menu a {
-        margin-left: inherit;
-    }
+  .Menu a:hover {
+    border-top: inherit; /* annulation du survol des liens */
+  }
 
-    .Menu a:hover {
-        border-top: inherit; /* annulation du survol des liens */
-    }
+  .Menu span {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .logo {
+    order: 0;
+    margin-left: 1em;
+  }
 
-    .Menu span {
-        order: 2;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .logo {
-        order: 0;
-        margin-left: 1em;
-    }
+  .inscription {
+    order: 1;
+    margin-right: 1em;
+  }
 
-    .inscription {
-        order: 1;
-        margin-right: 1em;
-    }
+  .heberge {
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
+    width: 50%;
+    justify-content: center;
+  }
+  .activ {
+    width: 50%;
+    justify-content: center;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 1em;
+  }
 
-    .heberge {
-        border-top: none;
-        border-bottom: 2px solid #0065FC;
-        color: #0065FC;
-        width: 50%;
-        justify-content: center;
-    
-    }
-    .activ {
-        width: 50%;
-        justify-content: center;
-        border-bottom: 2px solid #f2f2f2;
-        padding-bottom: 1em;
-    }
+  .Recherche {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 
-    .Recherche {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
+  h1 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+  }
 
-    h1 {
-        font-size: 1.6em;
-        margin-bottom: 0.5em;
-        margin-top: 1.5em;
-    }
+  .Recherche-bouton {
+    justify-content: center;
+    margin-top: 2em;
+  }
 
-    .Recherche-bouton {
-        justify-content: center;
-        margin-top: 2em;
-    }
+  .Bouton-search {
+    border-radius: 1em;
+  }
 
-    .Bouton-search-text {
-        display: none;
-    }
+  .Bouton-search i {
+    display: flex;
+  }
 
-    .Filtres {
-        margin-right: 1em;
-        margin-left: 1em;
-        margin-top: 0.5em;
-    }
+  .Bouton-search-text {
+    display: none; /* ne pas afficher la loupe */
+  }
 
-    .box-filtre {
-        flex-flow: wrap;
-    }
-    .filtre {
-        margin-bottom: 1em;
-        margin-right: 1.5em;
-    }
-    .logements {
-        margin-right: 1em;
-        margin-left: 1em;
-        margin-top: 1em;
-    }
-    .Resultats-Populaires {
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-    }
+  .Filtres {
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 0.5em;
+  }
 
-    .Populaires {
-        order: 1;
-        width: 100%;
-        border-radius: inherit;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
+  .box-filtre {
+    flex-flow: wrap;
+  }
+  .filtre {
+    margin-bottom: 1em;
+    margin-right: 1.5em;
+  }
 
-    .Populaires-pop {
-        width: 100%;
-        height: 11em;
-    }
-    
-    .Populaires-pop img {
-        height: 10em;
-    }
+  .logements {
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+  }
+  .Resultats-Populaires {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
 
-    .pop-description p {
-        margin-bottom: 3em;
-    }
+  .Populaires {
+    order: 1;
+    width: 100%;
+    border-radius: inherit;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 
-    .Resultats {
-        order: 2;
-        width: 100%;
-        background-color: inherit;
-        padding-right: 1em;
-        padding-left: 1em;
-    }
-    .Resultats-choix {
-        width: 100%;
-    }
-    .Resultats-box-choix {
-        display: flex;
-        flex-direction: column;
-    }
+  .Populaires-pop {
+    width: 100%;
+    height: 11em;
+  }
 
-    .Activites {
-        margin-right: 1em;
-        margin-left: 1em;
-    }
+  .Populaires-pop img {
+    height: 10em;
+  }
 
-    .activ {
-        grid-column: 2;
-        grid-row: 2;
-    } 
-    .Activites-box-Acts {
-        display: grid;
-        grid-template-columns: 1fr; /* 4 colones d' 1fr */
-        grid-template-rows: repeat(6, 10em); /*6 lignes de 5em */
-        grid-gap: 30px; /* écart entres les activités */
-    }
-    .Act-1 {
-        grid-column: 1; /* toute la colonne 1 */
-        grid-row: 1; 
-    }     
-    .Act-2 {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    
-    .Act-3 {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    
-    .Act-4 {
-        grid-column: 1;
-        grid-row: 4;
-    }
-    
-    .Act-5 {
-        grid-column: 1;
-        grid-row: 5;
-    }
-    
-    .Act-6 {
-        grid-column: 1;
-        grid-row: 6;
-    }
-    
-    footer {
-        display: flex;
-        flex-flow: column;
-        padding-right: inherit;
-        padding-left: 2em;
-        margin-top: 3em;
-    }
+  .pop-description p {
+    margin-bottom: 3em;
+  }
 
+  .Resultats {
+    order: 2;
+    width: 100%;
+    background-color: inherit;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  .Resultats-choix {
+    width: 100%;
+    height: 14em;
+  }
+
+  .Resultats-choix img {
+    height: 8em;
+  }
+
+  .Resultats-box-choix {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Activites {
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  .activ {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .Activites-box-Acts {
+    display: grid;
+    grid-template-columns: 1fr; /* 4 colones d' 1fr */
+    grid-template-rows: repeat(6, 15em); /*6 lignes de 5em */
+    grid-gap: 30px; /* écart entres les activités */
+  }
+  .Act-1 {
+    grid-column: 1; /* toute la colonne 1 */
+    grid-row: 1;
+  }
+  .Act-2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .Act-3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .Act-4 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .Act-5 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .Act-6 {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  footer {
+    display: flex;
+    flex-flow: column;
+    padding-right: inherit;
+    padding-left: 2em;
+    margin-top: 3em;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        /*font-size: 10px;*/
-    }
+  body {
+    /*font-size: 10px;*/
+  }
 
-    /* HEADER */
-.Filtres-titre {
+  /* HEADER */
+  .Filtres-titre {
     padding-top: 1em;
-}
-.filtre {
+  }
+  .filtre {
     border-radius: 5em;
-}
-/* RESULTATS + POPULAIRES */
-.Populaires h2 i {
+  }
+  /* RESULTATS + POPULAIRES */
+  .Populaires h2 i {
     margin-left: 5em;
-}
+  }
 }
 @media screen and (max-width: 1024px) {
-    body {
-        /*font-size: 10px;*/
-    }
+  body {
+    /*font-size: 10px;*/
+  }
 
-    /* HEADER */
-.Filtres-titre {
+  /* HEADER */
+  .Filtres-titre {
     padding-top: 1em;
-}
-.filtre {
+  }
+  .filtre {
     border-radius: 5em;
-}
-/* RESULTATS + POPULAIRES */
-.Populaires h2 i {
+  }
+  /* RESULTATS + POPULAIRES */
+  .Populaires h2 i {
     margin-left: 10em;
-}
+  }
 }
