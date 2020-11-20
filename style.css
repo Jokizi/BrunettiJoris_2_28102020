@@ -483,11 +483,13 @@ footer {
 
 /* RESPONSIVE */
 
-@media screen and (min-width: 415px) and (max-width: 768px) {
+@media screen and (min-width: 500px) and (max-width: 995px) {
   * {
     box-sizing: border-box;
   }
-
+  .bloc_page {
+    padding: 0 1% 0 1%;
+  }
   body {
     font-size: 12px;
   }
@@ -511,6 +513,16 @@ footer {
     height: auto;
     width: 100%;
   }
+
+  .Populaires h2 {
+    padding-top: 0.5em;
+    padding-left: 1.5em;
+  }
+
+  .Populaires h2 i {
+    padding-right: 1.5em;
+  }
+
   .Populaires-box-pop {
     display: flex;
     flex-direction: row;
@@ -527,7 +539,7 @@ footer {
   .Populaires-pop {
     width: 29%;
     background-color: #fff;
-    height: 13em;
+    height: 17em;
     margin-bottom: 2em;
     padding: 0.8%;
     border-radius: 1em;
@@ -541,15 +553,14 @@ footer {
   .Populaires-pop img {
     object-fit: cover;
     width: 100%;
-    height: 6.75em;
+    height: 9em;
     border-radius: 0.8em 0.8em 0 0;
   }
 
   .pop-description {
     padding-left: 5%;
     margin: inherit;
-    margin-bottom: 0.5em;git 
-    line-height: 1.2em;
+    margin-bottom: 0.5em;
     font-size: 0.9em;
   }
 
@@ -567,6 +578,10 @@ footer {
     padding: 0;
   }
 
+  .Resultats h2 {
+    padding-left: 1.5em;
+  }
+
   .Resultats-choix {
     height: 13em;
   }
@@ -574,9 +589,14 @@ footer {
   .Activites-box-Acts {
     grid-template-rows: repeat(6, 4em);
   }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 499px) {
   * {
     box-sizing: border-box;
   }
@@ -717,7 +737,6 @@ footer {
   .Resultats h2 {
     padding-left: 0;
   }
-  
 
   .Resultats-choix {
     width: 100%;
